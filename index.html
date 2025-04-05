@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Numérico</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+     <div class="container">
+        <h2>Conversor Numérico</h2>
+        
+        <div class="form-group">
+            <label for="tipoEntrada">Escolha o tipo de entrada:</label>
+            <select id="tipoEntrada">
+                <option value="bin">Binário</option>
+                <option value="dec" selected>Decimal</option>
+                <option value="hex">Hexadecimal</option>
+                <option value="oct">Octal</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <input type="text" id="numeroInput" placeholder="Digite o número">
+        </div>
+        
+        <div class="form-group">
+            <button id="converterBtn">Converter</button>
+        </div>
+        
+        <div class="resultados">
+            <p><strong>Binário:</strong> <span id="binario">-</span></p>
+            <p><strong>Decimal:</strong> <span id="decimal">-</span></p>
+            <p><strong>Hexadecimal:</strong> <span id="hexadecimal">-</span></p>
+            <p><strong>Octal:</strong> <span id="octal">-</span></p>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+
+</body>
+</html>
